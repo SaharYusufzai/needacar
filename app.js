@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const path = require('path')
 const User = require('./models/user')
 
-mongoose.connect('mongodb+srv://sahil:sahil15@@cluster0.14lq4be.mongodb.net/?retryWrites=true&w=majority').then(() => {
+mongoose.connect('mongodb+srv://m001-student:Ibtisam@sandbox.xuwkkn8.mongodb.net/needacar?retryWrites=true&w=majority').then(() => {
     console.log('db connected')
 }).catch(err => console.log(err))
 
