@@ -2,6 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const path = require('path')
 const User = require('./models/user')
+const PORT = process.env.PORT || 5000;
 
 mongoose.connect('mongodb+srv://m001-student:Ibtisam@sandbox.xuwkkn8.mongodb.net/needacar?retryWrites=true&w=majority').then(() => {
     console.log('db connected')
@@ -29,6 +30,6 @@ app.post('/sign_up', async (req, res) => {
     }
 })
 
-app.listen(5000, () => {
+app.listen(PORT, () => {
     console.log('Server Started at http://localhost:5000')
 })
